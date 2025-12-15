@@ -9,3 +9,39 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.semaforo {
+    background-color: beige;
+    border: 4px solid black;
+    height: 500px;
+    width: 250px;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.luz {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+#verde {
+    background-color: green;
+}
+
+#amarillo {
+    background-color: yellow;
+}
+#rojo {
+    background-color: red;
+}
+
+.active { 
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
+}
