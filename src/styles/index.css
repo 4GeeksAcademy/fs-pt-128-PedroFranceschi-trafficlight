@@ -31,17 +31,26 @@
     width: 150px;
 }
 
-#verde {
+#green {
     background-color: green;
 }
 
-#amarillo {
+#yellow {
     background-color: yellow;
 }
-#rojo {
+#red {
     background-color: red;
 }
 
-.active { 
+.active-red  { 
     box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
 }
+
+.active-yellow  { 
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow;
+}
+
+.active-green  { 
+    box-shadow: 0 0 10px green, 0 0 20px green, 0 0 40px green;
+}
+

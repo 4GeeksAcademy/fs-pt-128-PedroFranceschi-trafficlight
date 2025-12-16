@@ -5,38 +5,41 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
-	const [activeLight, setActiveLight] = useState("verde");
+	const [activeLight, setActiveLight] = useState("");
 
-	const glow = (color) => {
-		activeLight == color ? { 
-			boxShadow:`0 0 10px ${color},
-		 			   0 0 20px ${color},
-					   0 0 40px ${color}`,
-		} : {};
-	}
+	// const glow = (color) => {
+		
+	// 	activeLight == color ? { 
+	// 		boxShadow:`0 0 10px ${color},
+	// 	 			   0 0 20px ${color},
+	// 				   0 0 40px ${color}`,
+	// 	} : {};
+
+	// 	console.log(glow)
+	// }
 
 	return (
 		<div className="mt-5">
 			<div className="semaforo">
 				<div
-					id="verde"
-					style={glow("green")}
-					className={`luz ${activeLight === "verde" ? "active" : ""}`}
-					onClick={() => setActiveLight("verde")}
+					id="green"
+					// style={glow("green")}
+					className={`luz ${activeLight === "green" ? "active-green" : ""}`}
+					onClick={() => setActiveLight("green")}
 				></div>
 
 				<div
-					id="amarillo"
-					style={glow("yellow")}
-					className={`luz ${activeLight === "amarillo" ? "active" : ""}`}
-					onClick={() => setActiveLight("amarillo")}
+					id="yellow"
+					// style={glow("yellow")}
+					className={`luz ${activeLight === "yellow" ? "active-yellow" : ""}`}
+					onClick={() => setActiveLight("yellow")}
 				></div>
 
 				<div
-					id="rojo"
-					style={glow("red")}
-					className={`luz ${activeLight === "rojo" ? "active" : ""}`}
-					onClick={() => setActiveLight("rojo")}
+					id="red"
+					// style={glow("red")}
+					className={`luz ${activeLight === "red" ? "active-red" : ""}`}
+					onClick={() => setActiveLight("red")}
 				></div>
 			</div>
 		</div>
